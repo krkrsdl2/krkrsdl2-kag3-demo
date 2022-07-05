@@ -77,8 +77,35 @@
         {
           "uses" : "actions/upload-artifact@master",
           "with" : {
-            "name" : "krkrsdl2-kag3-demo",
+            "name" : "krkrsdl2-kag3-demo-xp3",
             "path" : "data.xp3"
+          }
+        }
+      ]
+    },
+    "create-release" : {
+      "needs" : ["build-xp3"],
+      "runs-on" : "ubuntu-20.04",
+      "timeout-minutes" : 20,
+      "if" : "github.ref == 'refs/heads/main'",
+      "steps" : [
+        {
+          "name" : "Download xp3 artifact",
+          "uses" : "actions/download-artifact@v1",
+          "with" : {
+            "name" : "krkrsdl2-kag3-demo-xp3"
+          }
+        },
+        {
+          "name" : "Create prerelease",
+          "if" : "github.ref == 'refs/heads/main'",
+          "uses" : "marvinpinto/action-automatic-releases@latest",
+          "with" : {
+            "repo_token" : "${{ secrets.GITHUB_TOKEN }}",
+            "prerelease" : "true",
+            "automatic_release_tag" : "latest",
+            "title" : "Latest development builds",
+            "files" : "data.xp3"
           }
         }
       ]
