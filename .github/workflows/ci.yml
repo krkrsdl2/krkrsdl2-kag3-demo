@@ -48,7 +48,7 @@
         },
         {
           "name" : "Update apt repository",
-          "run" : "sudo apt-get install update"
+          "run" : "sudo apt-get update"
         },
         {
           "name" : "Install p7zip",
