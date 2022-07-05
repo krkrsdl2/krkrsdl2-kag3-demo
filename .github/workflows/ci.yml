@@ -14,7 +14,7 @@
         "**.webp",
         "**.tlg",
         "**.ogg",
-        "**.opus",
+        "**.opus"
       ]
     },
     "pull_request" : {
@@ -30,7 +30,7 @@
         "**.webp",
         "**.tlg",
         "**.ogg",
-        "**.opus",
+        "**.opus"
       ]
     }
   },
