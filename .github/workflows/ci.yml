@@ -105,7 +105,7 @@
             "prerelease" : "true",
             "automatic_release_tag" : "latest",
             "title" : "Latest development builds",
-            "files" : "data.xp3"
+            "files" : "krkrsdl2-kag3-demo-xp3/data.xp3"
           }
         }
       ]
