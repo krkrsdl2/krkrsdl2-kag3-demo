@@ -1,0 +1,4 @@
+[submodule "external/kag3"]
+	path = external/kag3
+	url = https://github.com/krkrsdl2/kag3.git
+	branch = krkrsdl2

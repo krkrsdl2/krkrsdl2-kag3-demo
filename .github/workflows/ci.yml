@@ -1,0 +1,85 @@
+{
+  "name" : "Continuous Integration",
+  "on" : {
+    "push" : {
+      "paths" : [
+        "**.sh",
+        "**.tjs",
+        "**.ks",
+        "**.ksc",
+        "**.dic",
+        "**.arr",
+        "**.png",
+        "**.webp",
+        "**.tlg",
+        "**.ogg",
+        "**.opus",
+      ]
+    },
+    "pull_request" : {
+      "paths" : [
+        "**.sh",
+        "**.tjs",
+        "**.ks",
+        "**.ksc",
+        "**.dic",
+        "**.arr",
+        "**.png",
+        "**.webp",
+        "**.tlg",
+        "**.ogg",
+        "**.opus",
+      ]
+    }
+  },
+  "jobs" : {
+    "build-xp3" : {
+      "runs-on" : "ubuntu-20.04",
+      "timeout-minutes" : 20,
+      "steps" : [
+        {
+          "name" : "Checkout the repository",
+          "uses" : "actions/checkout@v2",
+          "with" : {
+            "submodules" : "recursive"
+          }
+        },
+        {
+          "name" : "Update apt repository",
+          "run" : "sudo apt-get install update"
+        },
+        {
+          "name" : "Install p7zip",
+          "run" : "sudo apt-get install -y p7zip"
+        },
+        {
+          "name" : "Download krkrrel",
+          "run" : "curl -LOC - https://github.com/krkrsdl2/krkrrel-ng/releases/download/latest/krkrrel-ubuntu.zip"
+        },
+        {
+          "name" : "Extract krkrrel",
+          "run" : "7z x -okrkrrel-tmp krkrrel-ubuntu.zip"
+        },
+        {
+          "name" : "Append krkrrel to path",
+          "run" : "echo \"$(realpath krkrrel-tmp)/krkrrel-ubuntu\" >> $GITHUB_PATH"
+        },
+        {
+          "name" : "Change permissions for krkrrel",
+          "run" : "chmod +x krkrrel-tmp/krkrrel-ubuntu/krkrrel"
+        },
+        {
+          "name" : "Do build",
+          "run" : "bash build.sh"
+        },
+        {
+          "uses" : "actions/upload-artifact@master",
+          "with" : {
+            "name" : "krkrsdl2-kag3-demo",
+            "path" : "data.xp3"
+          }
+        }
+      ]
+    }
+  }
+}
