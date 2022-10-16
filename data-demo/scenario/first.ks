@@ -59,7 +59,7 @@
 
 
 
-*syokai_start|Introduction to KiriKiri and KAG - Menu
+*syokai_start|Introduction to Kirikiri and KAG - Menu
 @startanchor
 
 ; Load the background image, draw the menu on the message layer
@@ -72,10 +72,10 @@
 @history output=false
 @style align=center
 [font size=40 color=0x00ffff]吉里吉里とKAGの紹介[resetfont][r]
-[font size=20 color=0x00ffff]Introduction to KiriKiri and KAG[resetfont][r]
+[font size=20 color=0x00ffff]Introduction to Kirikiri and KAG[resetfont][r]
 [r]
 [link target="*about_kirikiri"]吉里吉里とは[endlink][r]
-[link target="*about_kirikiri_en"]What is KiriKiri?[endlink][r]
+[link target="*about_kirikiri_en"]What is Kirikiri?[endlink][r]
 [r]
 [link target="*about_kag"]KAGとは[endlink][r]
 [link target="*about_kag_en"]What is KAG?[endlink][r]
@@ -83,7 +83,7 @@
 [link target="*about_kirikirisdl2"]吉里吉里SDL2とは？[endlink][r]
 [link target="*about_kirikirisdl2_en"]What is Kirikiri SDL2?[endlink][r]
 [r]
-;[link exp="kag.shutdown()" color=0xff0000 hint="吉里吉里/KAGの紹介を終了します / Exit the Introduction to KiriKiri/KAG"]終了 / Exit[endlink]
+;[link exp="kag.shutdown()" color=0xff0000 hint="吉里吉里/KAGの紹介を終了します / Exit the Introduction to Kirikiri/KAG"]終了 / Exit[endlink]
 @endnowait
 @history output=true
 @current page=fore
@@ -365,27 +365,27 @@ TJS2コードは、JavaScriptまたは別のスクリプト言語に変換する
 @end_select
 [s]
 
-*about_kirikiri_en|What is KiriKiri?
+*about_kirikiri_en|What is Kirikiri?
 @changebg_and_clear storage="_24_4"
-KiriKiri is software created in the TJS scripting language to perform various tasks.[l][r]
+Kirikiri is software created in the TJS scripting language to perform various tasks.[l][r]
 The TJS language is like a cross between Java and Javascript, and relatively easy to learn compared to C or C++.[l][r]
-Using KiriKiri, the main program is controlled by TJS scripts in order to create various applications.[l][r]
+Using Kirikiri, the main program is controlled by TJS scripts in order to create various applications.[l][r]
 It has particularly strong multimedia capabilities and is suitable for 2D games with relatively static displays.[p]
 *about_kirikiri2_en|
 @cm
-KiriKiri composes its picture using numerous images called layers overlapping each other.[l]  Layers can be overlayed using an alpha blend and can take on an heirarchical structure.[l][r]
+Kirikiri composes its picture using numerous images called layers overlapping each other.[l]  Layers can be overlayed using an alpha blend and can take on an heirarchical structure.[l][r]
 By default, layers can be loaded from PNG/JPEG/ERI/BMP files; the Susie plugin can extend this to include even more file formats.[l][r]
 The drawing system can't draw anything too complex, but it can render partially transparent rectangles and and antialiased text, as well as resize or transform images.[l][r]
 Using AVI/MPEG or SWF (Macromedia Flash) files, it can play movies.[p]
 *about_kirikiri3_en|
 @cm
-KiriKiri can play CD-DA, MIDI sequences, or PCM audio, adjusting the various volume levels.[l]  For PCM audio, it can play uncompressed .wav files; this can be extended to other formats as well using plugins, such as OggVorbis playback.[l][r]
+Kirikiri can play CD-DA, MIDI sequences, or PCM audio, adjusting the various volume levels.[l]  For PCM audio, it can play uncompressed .wav files; this can be extended to other formats as well using plugins, such as OggVorbis playback.[l][r]
 Several PCM sounds can be played at the same time.[l]  If you force it to, it can even play multiple CD-DA or MIDI sequences at the same time.[p]
 *about_kirikiri4_en
 @cm
 Other supplimentary tools are included:  
 [font color=0xffff00]Releaser[resetfont] can combine several files into one, or create a stand-alone self-executing file,[l] 
-[font color=0xffff00]KiriKiri Settings[resetfont] can adjust the various options for the KiriKiri main program,[l] 
+[font color=0xffff00]Kirikiri Settings[resetfont] can adjust the various options for the Kirikiri main program,[l] 
 the [font color=0xffff00]Pre-rendered Font Creation Tool[resetfont] can be used to prepare fonts on the developer side, so they're usable even if the font isn't installed on the player's side,[l] 
 and the [font color=0xffff00]Transparent Image Format Converter[resetfont] can be used to convert images with transparency data between various image formats.[l] 
 [r]
@@ -398,8 +398,8 @@ and the [font color=0xffff00]Transparent Image Format Converter[resetfont] can b
 *about_kag_en|What is KAG?
 @changebg_and_clear storage="_24_4"
 KAG is a kit designed to create visual novel or sound novel-style games, or story-driven, choice-based text adventure games.[l][r]
-KAG is a script that is executed by the KiriKiri game engine, itself written using TJS script.[l]  The scripts used by KAG are called "scenarios," and are again different from TJS scripts.[l]  TJS scripts require a rather heavy understanding of programming, but scenarios can be written more easily.[l][r]
-KAG is a system created on top of KiriKiri, so most of the functionality in KiriKiri can be used in KAG.[p]
+KAG is a script that is executed by the Kirikiri game engine, itself written using TJS script.[l]  The scripts used by KAG are called "scenarios," and are again different from TJS scripts.[l]  TJS scripts require a rather heavy understanding of programming, but scenarios can be written more easily.[l][r]
+KAG is a system created on top of Kirikiri, so most of the functionality in Kirikiri can be used in KAG.[p]
 *about_kag3_en|
 @cm
 Text display in KAG, as you can see, includes antialiased text,[l][r]
@@ -572,7 +572,7 @@ Correct![p]
 *about_kag_9_en|
 @cm
 @snowinit forevisible=true backvisible=false
-An important characteristic of KAG is its extensibility and customizability.[l]  Even if you can't do something with just KAG, by using TJS to directly control KiriKiri, many things are possible.[l][r]
+An important characteristic of KAG is its extensibility and customizability.[l]  Even if you can't do something with just KAG, by using TJS to directly control Kirikiri, many things are possible.[l][r]
 For instance, by loading a plugin for KAG to display "snow," you can make it snow like this.[l]  There are also plugins that increase the types of transitions available.[l][r]
 Also, because KAG itself is written as a TJS script, by editing the script files, you can customize the way every last nook and cranny of the the program runs.[p]
 @backlay
@@ -583,12 +583,12 @@ Also, because KAG itself is written as a TJS script, by editing the script files
 *about_kag_fin_en|End of the KAG introduction
 @cm
 This concludes the introduction to KAG.[l][r]
-By all means, everybody please use KiriKiri/KAG to make more wonderful games.[l][r]
+By all means, everybody please use Kirikiri/KAG to make more wonderful games.[l][r]
 [r]
 @start_select
 [link exp="System.shellExecute('http://www.mysteryparfait.com/kage-kirie/')" hint="Open the Kage-Kirie website"]Kage-Kirie website (English)[endlink][r]
-[link exp="System.shellExecute('https://krkrz.github.io/')" hint="Open the KiriKiri Z download page"]KiriKiri Z download page (Japanese)[endlink][r]
-[link exp="System.shellExecute('https://web.archive.org/web/20171218050344/http://kikyou.info:80/tvp/')" hint="Open the KiriKiri/KAG download page"]KiriKiri 2 download page (Japanese) (archived)[endlink][r]
+[link exp="System.shellExecute('https://krkrz.github.io/')" hint="Open the Kirikiri Z download page"]Kirikiri Z download page (Japanese)[endlink][r]
+[link exp="System.shellExecute('https://web.archive.org/web/20171218050344/http://kikyou.info:80/tvp/')" hint="Open the Kirikiri/KAG download page"]Kirikiri 2 download page (Japanese) (archived)[endlink][r]
 [r]
 [link target=*to_syokai_start]Return to the menu[endlink]
 @end_select
