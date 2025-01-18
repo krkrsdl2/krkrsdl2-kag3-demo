@@ -93,7 +93,8 @@
           "name" : "Download xp3 artifact",
           "uses" : "actions/download-artifact@v4",
           "with" : {
-            "name" : "krkrsdl2-kag3-demo-xp3"
+            "name" : "krkrsdl2-kag3-demo-xp3",
+            "path" : "krkrsdl2-kag3-demo-xp3"
           }
         },
         {
