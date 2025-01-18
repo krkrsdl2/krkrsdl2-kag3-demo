@@ -359,7 +359,7 @@ TJS2コードは、JavaScriptまたは別のスクリプト言語に変換する
 [r]
 [r]
 @start_select
-[link exp="System.shellExecute('https://krkrsdl2.github.io/')" hint="吉里吉里SDL2ホームページを開く"]吉里吉里SDL2ホームページ[endlink][r]
+[link exp="System.shellExecute('https://krkrsdl2.github.io/krkrsdl2/')" hint="吉里吉里SDL2ホームページを開く"]吉里吉里SDL2ホームページ[endlink][r]
 [r]
 [link target=*to_syokai_start]メニューに戻る[endlink]
 @end_select
@@ -619,7 +619,7 @@ If you have any code or documentation to contribute, please send Pull Requests t
 [r]
 [r]
 @start_select
-[link exp="System.shellExecute('https://krkrsdl2.github.io/')" hint="Open the Kirikiri SDL2 home page"]Kirikiri SDL2 home page[endlink][r]
+[link exp="System.shellExecute('https://krkrsdl2.github.io/krkrsdl2/en/')" hint="Open the Kirikiri SDL2 home page"]Kirikiri SDL2 home page[endlink][r]
 [r]
 [link target=*to_syokai_start]Return to the menu[endlink]
 @end_select
