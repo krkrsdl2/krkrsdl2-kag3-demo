@@ -49,7 +49,7 @@
         },
         {
           "name" : "Install dependencies",
-          "run" : "apt-get -y -o Dpkg::Options::='--force-confdef' -o Dpkg::Options::='--force-confold' install p7zip curl git"
+          "run" : "apt-get -y -o Dpkg::Options::='--force-confdef' -o Dpkg::Options::='--force-confold' install p7zip-full curl git"
         },
         {
           "name" : "Checkout the repository",
