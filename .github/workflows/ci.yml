@@ -45,11 +45,11 @@
       "steps" : [
         {
           "name" : "Update apt repository",
-          "run" : "sudo apt-get update"
+          "run" : "apt-get -y update"
         },
         {
           "name" : "Install dependencies",
-          "run" : "sudo apt-get install -y p7zip curl git"
+          "run" : "apt-get -y -o Dpkg::Options::='--force-confdef' -o Dpkg::Options::='--force-confold' install p7zip curl git"
         },
         {
           "name" : "Checkout the repository",
