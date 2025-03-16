@@ -44,19 +44,19 @@
       "timeout-minutes" : 20,
       "steps" : [
         {
+          "name" : "Update apt repository",
+          "run" : "sudo apt-get update"
+        },
+        {
+          "name" : "Install dependencies",
+          "run" : "sudo apt-get install -y p7zip curl git"
+        },
+        {
           "name" : "Checkout the repository",
           "uses" : "actions/checkout@v4",
           "with" : {
             "submodules" : "recursive"
           }
-        },
-        {
-          "name" : "Update apt repository",
-          "run" : "sudo apt-get update"
-        },
-        {
-          "name" : "Install p7zip",
-          "run" : "sudo apt-get install -y p7zip curl"
         },
         {
           "name" : "Download krkrrel",
